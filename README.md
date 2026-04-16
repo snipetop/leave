@@ -199,7 +199,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## 👤 Author
 
 **Kanav Sharma**
-- GitHub: [@kanavSharma](https://github.com/snipetop01)
+- GitHub: [@snipetop01](https://github.com/snipetop01)
 - Email: kanavsharma953@gmail.com
 
 ---
