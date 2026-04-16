@@ -199,8 +199,8 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## 👤 Author
 
 **Kanav Sharma**
-- GitHub: [@kanavSharma](https://github.com/yourusername)
-- Email: kanav@example.com
+- GitHub: [@kanavSharma](https://github.com/snipetop01)
+- Email: kanavsharma953@gmail.com
 
 ---
 
@@ -220,7 +220,7 @@ Contributions are welcome! To contribute:
 
 For issues, questions, or suggestions:
 - Open an issue on GitHub
-- Contact: kanav@example.com
+- Contact: kanavsharma953@gmail.com
 
 ---
 
