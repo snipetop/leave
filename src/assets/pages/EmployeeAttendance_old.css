@@ -1,0 +1,266 @@
+/* Import profile page styles */
+.profile-page-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7faff 60%, #e0e7ef 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.profile-header {
+  width: 100vw;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #1f25e8;
+  margin: 0;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.profile-quote {
+  margin: 1.2rem 0 2rem 0;
+  font-size: 1.1rem;
+  color: #5eaefd;
+  font-style: italic;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.profile-card-centered {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(31,37,232,0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.profile-footer {
+  width: 100vw;
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  z-index: 2;
+}
+
+.profile-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.profile-header-back-btn {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  background: #e0e7ef;
+  color: #1f25e8;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.profile-header-back-btn:hover {
+  background: #1f25e8;
+  color: #fff;
+}
+
+/* Attendance specific styles */
+.attendance-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  color: #1f25e8;
+}
+
+.attendance-icon {
+  font-size: 2rem;
+  color: #1f25e8;
+}
+
+.attendance-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f25e8;
+  margin: 0;
+}
+
+.attendance-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 1px 4px 0 rgba(60, 60, 120, 0.04);
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.time-display {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.time-display h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #232946;
+  margin-bottom: 0.5rem;
+}
+
+.current-time {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f25e8;
+  font-family: 'Courier New', monospace;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(31,37,232,0.10);
+  border: 2px solid #e0e7ef;
+}
+
+.attendance-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.check-in-btn, .check-out-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.check-in-btn {
+  background: #22c55e;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.check-in-btn:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(34, 197, 94, 0.4);
+}
+
+.check-out-btn {
+  background: #ef4444;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.check-out-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.4);
+}
+
+.attendance-complete {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: 2px solid #c3e6cb;
+}
+
+.complete-icon {
+  font-size: 1.2rem;
+  color: #155724;
+}
+
+@media (max-width: 600px) {
+  .profile-card-centered {
+    padding: 1.5rem 1rem;
+    max-width: 95vw;
+  }
+  
+  .attendance-card {
+    padding: 1.5rem;
+  }
+  
+  .current-time {
+    font-size: 2rem;
+    padding: 0.8rem;
+  }
+  
+  .attendance-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .check-in-btn, .check-out-btn {
+    min-width: 180px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.attendance-content-wrapper {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(31,37,232,0.10);
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.attendance-summary-row {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem 0;
+  color: #232946;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .attendance-content-wrapper {
+    padding: 1.5rem;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 600px) {
+  .attendance-content-wrapper {
+    padding: 0.5rem;
+    max-width: 99vw;
+  }
+} 

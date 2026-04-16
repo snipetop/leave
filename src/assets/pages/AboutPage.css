@@ -1,0 +1,104 @@
+/* Using the same professional palette */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary-color: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --white: #ffffff;
+  --border-color: #e5e7eb;
+}
+
+.about-bg {
+  background-color: var(--secondary-color);
+  padding: 4rem 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.about-tagline {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.about-main {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.about-card {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+.about-card h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-card p,
+.about-features ul {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-features ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+.about-features ul li {
+    margin-bottom: 0.5rem;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.about-back-btn-fixed {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.about-back-btn-fixed:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .about-bg {
+        padding: 3rem 1.5rem;
+    }
+    .about-header h1 {
+        font-size: 2rem;
+    }
+} 

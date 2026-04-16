@@ -1,0 +1,117 @@
+.employee-dashboard-content {
+  padding: 1rem 0;
+}
+
+.employee-stats-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.employee-stat-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.employee-stat-box span {
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: block;
+}
+
+.employee-stat-box.total { color: #1f25e8; }
+.employee-stat-box.pending { color: #f59e0b; }
+.employee-stat-box.approved { color: #10b981; }
+.employee-stat-box.rejected { color: #ef4444; }
+
+.employee-actions-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.employee-request-leave-btn {
+  background: #1f25e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.employee-request-leave-btn:hover {
+  background: #43cea2;
+}
+
+.employee-leave-table-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.table-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.employee-leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-leave-table th,
+.employee-leave-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.employee-leave-table th {
+  background: #f7faff;
+  font-weight: 700;
+  color: #1f25e8;
+}
+
+.employee-leave-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-leave-table tbody tr:hover {
+  background-color: #f7faff;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.status-badge.pending { background-color: #f59e0b; }
+.status-badge.approved { background-color: #10b981; }
+.status-badge.rejected { background-color: #ef4444; }
+
+@media (max-width: 900px) {
+  .dashboard-cards-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .employee-dashboard-content {
+    padding: 1rem 0.2rem;
+  }
+} 

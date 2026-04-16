@@ -1,0 +1,139 @@
+/* Using the same professional palette */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary-color: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --white: #ffffff;
+  --border-color: #e5e7eb;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+}
+
+.leave-content {
+    padding: 2rem;
+}
+
+.leave-types-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leave-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.leave-types-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.leave-type-card {
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--border-color);
+}
+
+.leave-type-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.leave-type-desc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.leave-table-section {
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    overflow-x: auto;
+}
+
+.leave-table-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.leave-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.leave-table th {
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.leave-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-action-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.admin-action-btn.approve {
+    background-color: var(--success-color);
+    color: var(--white);
+}
+.admin-action-btn.approve:hover {
+    background-color: #059669;
+}
+.admin-action-btn.reject {
+    background-color: var(--error-color);
+    color: var(--white);
+}
+.admin-action-btn.reject:hover {
+    background-color: #dc2626;
+}
+
+.admin-notification {
+    background-color: var(--text-primary);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .leave-content {
+        padding: 1.5rem;
+    }
+    .leave-types-list {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -1,0 +1,23 @@
+.admin-profile-summary {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.admin-profile-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(31,37,232,0.10);
+}
+.admin-profile-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #232946;
+}
+.admin-profile-role {
+  font-size: 0.98rem;
+  color: #5eaefd;
+  font-weight: 600;
+} 

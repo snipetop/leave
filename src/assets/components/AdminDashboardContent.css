@@ -1,0 +1,356 @@
+.admin-dashboard-content {
+  padding: 2rem 2.5rem;
+}
+.admin-stats-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.admin-stat-box {
+  flex: 1 1 120px;
+  min-width: 120px;
+  max-width: 200px;
+  background: #e0e7ef;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px 0 rgba(60, 60, 120, 0.04);
+  padding: 1rem 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #232946;
+  transition: background 0.2s;
+}
+.admin-stat-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 0.2rem;
+}
+.admin-stat-box.total { background: #e0e7ef; }
+.admin-stat-box.pending { background: #fffbe6; color: #b59f00; }
+.admin-stat-box.approved { background: #e6fff2; color: #1a7f37; }
+.admin-stat-box.rejected { background: #ffe6e6; color: #d7263d; }
+
+.admin-actions-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.admin-search {
+  flex: 1 1 200px;
+  min-width: 180px;
+  padding: 10px;
+  border: 1.5px solid #1f25e8;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7faff;
+  transition: border 0.2s, background 0.2s;
+}
+.admin-search:focus {
+  border: 1.5px solid #1f25e8;
+  outline: none;
+  background: #fff;
+}
+.admin-add-leave-btn {
+  background: #1f25e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  height: 44px;
+  padding: 0 1.5rem;
+  box-shadow: 0 2px 8px rgba(106,130,251,0.13);
+  letter-spacing: 1px;
+}
+.admin-add-leave-btn:hover {
+  background: #1f25e8;
+  box-shadow: 0 4px 16px rgba(31,37,232,0.13);
+}
+
+.admin-leave-table-section {
+  margin-top: 2.5rem;
+}
+.admin-leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(60, 60, 120, 0.04);
+  font-size: 1rem;
+}
+.admin-leave-table th, .admin-leave-table td {
+  padding: 0.7rem 1rem;
+  text-align: left;
+}
+.admin-leave-table th {
+  background: #e0e7ef;
+  font-weight: 700;
+  color: #1f25e8;
+}
+.admin-leave-table tr:nth-child(even) {
+  background: #f4f7fa;
+}
+.admin-leave-table td.pending { color: #b59f00; font-weight: 700; }
+.admin-leave-table td.approved { color: #1a7f37; font-weight: 700; }
+.admin-leave-table td.rejected { color: #d7263d; font-weight: 700; }
+.approve-btn, .reject-btn {
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 6px 16px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, opacity 0.2s;
+}
+.approve-btn {
+  background: #1f25e8;
+  color: #fff;
+}
+.reject-btn {
+  background: #fc5c7d;
+  color: #fff;
+}
+.approve-btn:disabled, .reject-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile Card Styles */
+.mobile-leave-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-leave-card {
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #e0e7ef;
+}
+
+.mobile-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e7ef;
+}
+
+.mobile-card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #232946;
+}
+
+.mobile-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobile-status.pending {
+  background: #fffbe6;
+  color: #b59f00;
+}
+
+.mobile-status.approved {
+  background: #e6fff2;
+  color: #1a7f37;
+}
+
+.mobile-status.rejected {
+  background: #ffe6e6;
+  color: #d7263d;
+}
+
+.mobile-card-content {
+  margin-bottom: 1rem;
+}
+
+.mobile-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f4f7fa;
+}
+
+.mobile-card-row:last-child {
+  border-bottom: none;
+}
+
+.mobile-label {
+  font-weight: 600;
+  color: #1f25e8;
+  font-size: 0.9rem;
+}
+
+.mobile-value {
+  font-weight: 500;
+  color: #232946;
+  text-align: right;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.mobile-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.mobile-card-actions .approve-btn,
+.mobile-card-actions .reject-btn {
+  flex: 1;
+  min-width: 80px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  margin-right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .admin-dashboard-content {
+    padding: 1.5rem 1rem;
+  }
+  
+  .admin-stats-row {
+    gap: 1rem;
+  }
+  
+  .admin-stat-box {
+    flex: 1 1 100px;
+    min-width: 100px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .admin-stat-box span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  .admin-stats-row {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .admin-stat-box {
+    flex: none;
+    max-width: none;
+    min-width: auto;
+    padding: 1rem;
+  }
+  
+  .admin-actions-row {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+  }
+  
+  .admin-search {
+    flex: none;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .admin-add-leave-btn {
+    width: 100%;
+    height: 48px;
+    font-size: 1rem;
+  }
+  
+  .admin-leave-table {
+    display: none;
+  }
+  
+  .mobile-leave-cards {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard-content {
+    padding: 0.8rem 0.3rem;
+  }
+  
+  .admin-stat-box {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .admin-stat-box span {
+    font-size: 1.3rem;
+  }
+  
+  .mobile-leave-card {
+    padding: 1rem;
+  }
+  
+  .mobile-card-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .mobile-card-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+  
+  .mobile-value {
+    text-align: left;
+    max-width: 100%;
+  }
+  
+  .mobile-card-actions {
+    flex-direction: column;
+  }
+  
+  .mobile-card-actions .approve-btn,
+  .mobile-card-actions .reject-btn {
+    width: 100%;
+  }
+}
+
+.admin-dashboard-header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.admin-dashboard-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1f25e8;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.admin-dashboard-banner {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1f25e8;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+} 
